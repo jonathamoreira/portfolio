@@ -173,7 +173,7 @@ header {
     right: -20rem;
     top: 0;
     transition: all 1s;
-    z-index: 100;
+    z-index: 50;
 }
 .show-menu .sidebar   {
     right: 0;
