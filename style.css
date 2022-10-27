@@ -14,6 +14,9 @@
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif ;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .hamburguer {
     /*background-color: #6f0000;*/
@@ -170,6 +173,7 @@ header {
     right: -20rem;
     top: 0;
     transition: all 1s;
+    z-index: 100;
 }
 .show-menu .sidebar   {
     right: 0;
@@ -547,4 +551,50 @@ header {
     cursor: pointer;
     grid-column: 2;
 
+}
+
+footer{
+    width: 100%;
+    height: 6rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin:  0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+.social-list ul{
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.5rem;
+    bottom: 3rem;
+    background-color:#200122; 
+    background: -webkit-linear-gradient(to right, #6f0000, #200122); 
+    background: linear-gradient(to right, #6f0000, #200122);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
